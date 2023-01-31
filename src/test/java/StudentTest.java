@@ -1,3 +1,4 @@
+import Model.Student;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -6,6 +7,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class StudentTest {
 
     Student student;
+    protected int location;
 
 
     @BeforeEach
@@ -31,5 +33,10 @@ public class StudentTest {
     @Test
     void calculateRent(){
         assertThat(student.calculateRent()).isEqualTo(1000);
+    }
+
+    @Test
+    public String studentListing(int price) {
+        return this.location + "Student Flat - Studio at " + price + ".";
     }
 }

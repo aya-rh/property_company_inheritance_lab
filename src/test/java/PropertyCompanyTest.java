@@ -1,3 +1,5 @@
+import Model.Bungalow;
+import Model.PropertyCompany;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +11,7 @@ public class PropertyCompanyTest {
 
     @BeforeEach
     void setUp(){
-        propertyCompany = new PropertyCompany();
+        propertyCompany = new PropertyCompany("Aya's Property");
     }
 
     @Test

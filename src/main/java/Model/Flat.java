@@ -1,3 +1,7 @@
+package Model;
+
+import Model.Building;
+
 public abstract class Flat extends Building {
 
     private boolean hasRecyclingRoom;

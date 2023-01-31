@@ -1,3 +1,5 @@
+package Model;
+
 public abstract class Building {
 
     protected String location;
